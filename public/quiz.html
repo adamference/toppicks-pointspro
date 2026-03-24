@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Finder Quiz — TopPicks PointsPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">TopPicks <span>PointsPro</span><span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="/quiz.html">Card Finder</a></li>
+        <li><a href="/cards.html">Top Cards</a></li>
+        <li><a href="/credit-score.html">By Credit Score</a></li>
+        <li><a href="/credit-limit.html">By Credit Limit</a></li>
+        <li><a href="/guide.html">Guides</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="header-sub">
+      <div class="header-sub-inner">
+        <a href="#">Advertiser Disclosure</a>
+        <a href="#">About Our Ratings</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>2026 — <span class="highlight">Top Credit Card Offers</span></h1>
+    <p class="subtitle">Instant Credit Lines up to $10,000</p>
+    <p class="desc">Get your approval decision in seconds. Answer 3 quick questions and we'll match you with the best offers.</p>
+  </section>
+
+  <div class="container">
+    <!-- AD: Top Banner -->
+    <div class="ad-slot ad-banner" id="ad-quiz-top">Ad Placement — 728×90 Leaderboard</div>
+
+    <div class="quiz-card">
+      <div class="quiz-progress"><div class="quiz-progress-fill" style="width: 33%"></div></div>
+
+      <!-- Step 1 -->
+      <div class="quiz-step active" data-step="0">
+        <p class="step-label">Step 1 of 3</p>
+        <h2>What is your estimated credit score?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="excellent">Excellent (750+)</button>
+          <button class="quiz-option" data-value="good">Good (700–749)</button>
+          <button class="quiz-option" data-value="fair">Fair (640–699)</button>
+          <button class="quiz-option" data-value="poor">Bad / Poor (Below 639)</button>
+          <button class="quiz-option" data-value="none">No Credit History</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="quiz-step" data-step="1">
+        <p class="step-label">Step 2 of 3</p>
+        <h2>What is your primary goal?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="build">Build or Rebuild Credit</button>
+          <button class="quiz-option" data-value="cashback">Cash Back &amp; Rewards</button>
+          <button class="quiz-option" data-value="lowinterest">Lowest Interest Rates</button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="quiz-step" data-step="2">
+        <p class="step-label">Step 3 of 3</p>
+        <h2>How soon do you need the card?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="asap">Immediately — Urgent</button>
+          <button class="quiz-option" data-value="30days">Within 30 Days</button>
+          <button class="quiz-option" data-value="research">Just Researching</button>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div class="quiz-loading" style="display:none">
+        <h3>Analyzing Your Profile...</h3>
+        <p>Scanning 40+ partner offers for the best match</p>
+        <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+        <p style="font-size:13px;color:var(--text-muted)">This usually takes a few seconds</p>
+      </div>
+
+      <!-- Results -->
+      <div class="quiz-results" style="display:none">
+        <div class="check-icon">✓</div>
+        <h3>Analysis Complete!</h3>
+        <p>We found <strong>3 cards</strong> that match your profile with high approval odds.</p>
+        <a href="/cards.html" class="btn btn-primary btn-lg">View My Results →</a>
+      </div>
+    </div>
+
+    <!-- AD: Below Quiz -->
+    <div class="ad-slot ad-in-content" id="ad-quiz-mid1">Ad Placement — In-Content 1</div>
+
+    <div class="content-wrap">
+      <div class="content-main">
+        <div class="content-section">
+          <h2>How Our Card Matching Works</h2>
+          <p>Our recommendation engine uses the information you provide — your estimated credit score, financial goals, and timeline — to filter through offers from over 40 partner issuers. We rank results based on approval likelihood, reward value, and overall cardholder satisfaction.</p>
+          <p>Unlike generic comparison tools, PointsPro tailors recommendations to your specific profile. Someone with excellent credit will see very different results from someone rebuilding their score, because the best card for you depends on where you are financially.</p>
+          <h3>What We Evaluate</h3>
+          <ul>
+            <li><strong>Approval odds</strong> — We estimate likelihood based on the credit range each issuer targets.</li>
+            <li><strong>Reward value</strong> — We calculate the real-dollar value of points, miles, or cash back over the first year.</li>
+            <li><strong>Fee structure</strong> — Annual fees, foreign transaction fees, and penalty APRs are all factored in.</li>
+            <li><strong>Cardholder perks</strong> — Sign-up bonuses, purchase protection, and travel benefits get weighted too.</li>
+          </ul>
+        </div>
+
+        <!-- AD: In-Content 2 -->
+        <div class="ad-slot ad-in-content" id="ad-quiz-mid2">Ad Placement — In-Content 2</div>
+
+        <div class="content-section">
+          <h2>Tips Before You Apply</h2>
+          <p>Getting the most out of a new credit card starts before you even submit an application. Here are a few steps that improve your chances and help you choose wisely.</p>
+          <h3>Check Your Credit Report First</h3>
+          <p>You're entitled to a free credit report from each of the three major bureaus once per year through AnnualCreditReport.com. Review yours for errors — incorrect balances, accounts you don't recognize, or outdated negative marks. Disputing errors can raise your score before you apply.</p>
+          <h3>Keep Your Utilization Low</h3>
+          <p>Credit utilization — the percentage of your available credit you're using — is one of the biggest factors in your score. Try to keep it below 30%, and ideally under 10%, in the months before applying for a new card.</p>
+          <h3>Don't Apply for Too Many Cards at Once</h3>
+          <p>Each application generates a hard inquiry. Spacing applications out by at least 3–6 months reduces the impact on your score and avoids looking like a risk to issuers.</p>
+        </div>
+
+        <!-- AD: In-Content 3 -->
+        <div class="ad-slot ad-in-content" id="ad-quiz-mid3">Ad Placement — In-Content 3</div>
+
+        <div class="content-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">Is my information secure?</button>
+              <div class="faq-answer"><p>Yes. We do not store your credit score or any personal data. The quiz results are generated in your browser and not transmitted to our servers. When you click through to an issuer, you leave our site and interact directly with the card company.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Are these real offers?</button>
+              <div class="faq-answer"><p>Yes. All cards listed on PointsPro are real products offered by licensed financial institutions. We receive compensation from some issuers when you apply through our links, which helps keep our service free.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Will taking the quiz affect my credit?</button>
+              <div class="faq-answer"><p>No. Taking the quiz does not trigger any credit check. Only when you submit a formal application through the issuer's website will a hard inquiry be placed on your credit report.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">How accurate are the approval estimates?</button>
+              <div class="faq-answer"><p>Our estimates are based on publicly available issuer guidelines and historical data. They are not guarantees. Actual approval depends on your full credit profile, income, and the issuer's underwriting criteria.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-box">
+          <h4>Popular Searches</h4>
+          <ul>
+            <li><a href="/cards.html">Best Cash Back Cards</a></li>
+            <li><a href="/cards.html">No Annual Fee Cards</a></li>
+            <li><a href="/cards.html">Secured Cards for Bad Credit</a></li>
+            <li><a href="/cards.html">Student Credit Cards</a></li>
+            <li><a href="/cards.html">0% Intro APR Cards</a></li>
+          </ul>
+        </div>
+        <!-- AD: Sidebar -->
+        <div class="ad-slot ad-sidebar" id="ad-quiz-sidebar1">Ad Placement — Sidebar 300×250</div>
+        <div class="sidebar-box">
+          <h4>Credit Resources</h4>
+          <ul>
+            <li><a href="/guide.html">Understanding APR</a></li>
+            <li><a href="/guide.html">How Credit Scores Work</a></li>
+            <li><a href="/guide.html">Building Credit From Scratch</a></li>
+          </ul>
+        </div>
+        <!-- AD: Sidebar 2 -->
+        <div class="ad-slot ad-sidebar" id="ad-quiz-sidebar2">Ad Placement — Sidebar 300×250</div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Cards by Credit</h5>
+        <ul>
+          <li><a href="/credit-score.html">Excellent Credit</a></li>
+          <li><a href="/credit-score.html">Good Credit</a></li>
+          <li><a href="/credit-score.html">Fair Credit</a></li>
+          <li><a href="/credit-score.html">Poor Credit</a></li>
+          <li><a href="/credit-score.html">No Credit History</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Card Categories</h5>
+        <ul>
+          <li><a href="/cards.html">Cash Back</a></li>
+          <li><a href="/cards.html">Rewards</a></li>
+          <li><a href="/cards.html">Secured Cards</a></li>
+          <li><a href="/cards.html">Student Cards</a></li>
+          <li><a href="/cards.html">Low Interest</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="/guide.html">Credit Card Guide</a></li>
+          <li><a href="/guide.html">Building Credit</a></li>
+          <li><a href="/guide.html">Rewards Strategies</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TopPicks PointsPro. All rights reserved. Advertiser Disclosure: Many of the card offers on this site are from companies from which we receive compensation.</p>
+    </div>
+  </footer>
+
+  <div class="ad-slot ad-sticky-footer" id="ad-sticky-footer">
+    Ad Placement — Sticky Footer Banner
+    <button class="ad-close" aria-label="Close ad">&times;</button>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

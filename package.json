@@ -1,0 +1,13 @@
+{
+  "name": "toppicks-pointspro",
+  "version": "1.0.0",
+  "description": "TopPicks PointsPro - Credit card comparison and recommendation landing pages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
