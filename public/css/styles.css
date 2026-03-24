@@ -41,8 +41,7 @@ img { max-width: 100%; height: auto; }
 
 /* ─── HEADER ─── */
 .site-header {
-  background: var(--bg-card);
-  border-bottom: 1px solid var(--border);
+  background: var(--bg-dark);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -55,20 +54,19 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 68px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 20px;
-  color: var(--text);
+  text-decoration: none;
 }
 
-.logo span { color: var(--primary); }
-.logo .dot { color: var(--accent); }
+.logo img {
+  height: 48px;
+  width: auto;
+}
 
 .nav-links {
   display: flex;
@@ -77,13 +75,13 @@ img { max-width: 100%; height: auto; }
 }
 
 .nav-links a {
-  color: var(--text-light);
+  color: #A0AEC0;
   font-size: 14px;
   font-weight: 500;
   transition: color var(--transition);
 }
 
-.nav-links a:hover { color: var(--primary); }
+.nav-links a:hover { color: white; }
 
 .nav-toggle {
   display: none;
@@ -97,14 +95,14 @@ img { max-width: 100%; height: auto; }
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--text);
+  background: white;
   margin: 5px 0;
   transition: var(--transition);
 }
 
 .header-sub {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  background: #162231;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   padding: 8px 0;
 }
 
@@ -115,11 +113,11 @@ img { max-width: 100%; height: auto; }
   display: flex;
   gap: 20px;
   font-size: 12px;
-  color: var(--text-muted);
+  color: #64748B;
 }
 
-.header-sub a { color: var(--text-muted); font-size: 12px; }
-.header-sub a:hover { color: var(--primary); }
+.header-sub a { color: #64748B; font-size: 12px; }
+.header-sub a:hover { color: #A0AEC0; }
 
 /* ─── AD PLACEMENTS ─── */
 .ad-slot {
@@ -915,12 +913,12 @@ img { max-width: 100%; height: auto; }
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 64px;
+    top: 68px;
     left: 0;
     right: 0;
-    background: var(--bg-card);
+    background: var(--bg-dark);
     padding: 16px 24px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     box-shadow: var(--shadow-md);
   }
   .quiz-card { padding: 24px; }
