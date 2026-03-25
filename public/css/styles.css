@@ -42,8 +42,7 @@ img { max-width: 100%; height: auto; }
 /* ─── HEADER ─── */
 .site-header {
   background: var(--bg-dark);
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 100;
 }
 
