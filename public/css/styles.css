@@ -48,7 +48,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -107,7 +107,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .header-sub-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -166,7 +166,7 @@ img { max-width: 100%; height: auto; }
 
 .ad-in-content {
   width: 100%;
-  max-width: 728px;
+  max-width: 100%;
   height: 120px;
   margin: 24px auto;
 }
@@ -210,7 +210,7 @@ img { max-width: 100%; height: auto; }
 .hero {
   text-align: center;
   padding: 48px 24px 32px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -239,15 +239,15 @@ img { max-width: 100%; height: auto; }
 
 /* ─── CONTAINER ─── */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .content-wrap {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 32px;
+  grid-template-columns: 1fr 336px;
+  gap: 40px;
   margin-top: 24px;
 }
 
@@ -259,7 +259,7 @@ img { max-width: 100%; height: auto; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   padding: 40px;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto 32px;
 }
 
@@ -576,11 +576,16 @@ img { max-width: 100%; height: auto; }
 
 /* ─── CREDIT SCORE SELECTOR ─── */
 .score-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
-  max-width: 900px;
   margin: 0 auto 40px;
+}
+
+.score-grid .score-card {
+  flex: 0 1 calc(25% - 12px);
+  min-width: 260px;
 }
 
 .score-card {
@@ -641,7 +646,7 @@ img { max-width: 100%; height: auto; }
 /* ─── CREDIT LIMIT SELECTOR ─── */
 .limit-section {
   text-align: center;
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto 40px;
 }
 
@@ -837,7 +842,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .footer-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
@@ -860,7 +865,7 @@ img { max-width: 100%; height: auto; }
 .footer-col a:hover { color: white; }
 
 .footer-bottom {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 32px auto 0;
   padding: 24px 24px 0;
   border-top: 1px solid rgba(255,255,255,0.1);
@@ -922,7 +927,7 @@ img { max-width: 100%; height: auto; }
     box-shadow: var(--shadow-md);
   }
   .quiz-card { padding: 24px; }
-  .score-grid { grid-template-columns: 1fr; }
+  .score-grid .score-card { flex: 0 1 100%; }
   .card-details { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .ad-medium-rect { width: 100%; }
